@@ -2,7 +2,7 @@ services:
   - type: web
     name: rentme-marketplace
     env: node
-    plan: starter
+    plan: free
     region: singapore
     buildCommand: npm ci && npm run build
     startCommand: npm start
