@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Hyderabad travel skyline">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#113d35"/>
+      <stop offset="0.58" stop-color="#0b7a5b"/>
+      <stop offset="1" stop-color="#d69d2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1230" cy="190" r="120" fill="#f6d37b" opacity="0.92"/>
+  <path d="M0 680c155-91 294-126 416-104 117 21 201 92 333 81 148-12 245-121 398-124 127-3 250 68 453 11v356H0Z" fill="#10352f" opacity="0.72"/>
+  <g fill="#f7efe0" opacity="0.95">
+    <rect x="238" y="402" width="206" height="252" rx="16"/>
+    <rect x="280" y="350" width="122" height="88" rx="42"/>
+    <rect x="174" y="360" width="48" height="296" rx="24"/>
+    <rect x="460" y="360" width="48" height="296" rx="24"/>
+    <rect x="198" y="322" width="18" height="62" rx="9"/>
+    <rect x="476" y="322" width="18" height="62" rx="9"/>
+    <path d="M302 654V530c0-35 25-64 55-64s55 29 55 64v124Z" fill="#113d35" opacity="0.55"/>
+  </g>
+  <g fill="#fff7e8" opacity="0.78">
+    <rect x="730" y="478" width="310" height="178" rx="14"/>
+    <path d="M760 478c38-62 81-93 129-93 49 0 92 31 130 93Z"/>
+    <rect x="804" y="548" width="44" height="108" rx="20" fill="#113d35" opacity="0.45"/>
+    <rect x="922" y="548" width="44" height="108" rx="20" fill="#113d35" opacity="0.45"/>
+  </g>
+  <text x="90" y="150" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" font-weight="700">RentMe Hyderabad</text>
+  <text x="90" y="202" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" opacity="0.86">Verified public travel experiences</text>
+</svg>

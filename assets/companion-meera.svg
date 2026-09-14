@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Meera Iyer verified Hyderabad travel companion">
+  <rect width="640" height="480" fill="#f6f1e8"/>
+  <circle cx="508" cy="96" r="84" fill="#d69d2f" opacity="0.38"/>
+  <path d="M74 360c84-78 153-105 207-81 53 24 88 67 145 53 44-11 84-54 144-122v150H74Z" fill="#0b7a5b" opacity="0.2"/>
+  <circle cx="320" cy="158" r="70" fill="#39291f"/>
+  <path d="M224 382c14-91 55-137 96-137s82 46 96 137Z" fill="#9d3f35"/>
+  <circle cx="320" cy="176" r="48" fill="#bd8060"/>
+  <path d="M276 147c24-32 70-32 94 0-31-8-62-8-94 0Z" fill="#39291f"/>
+  <rect x="426" y="250" width="98" height="72" rx="10" fill="#17211c" opacity="0.88"/>
+  <circle cx="456" cy="286" r="16" fill="#d69d2f"/>
+  <path d="M488 266h18v40h-18z" fill="#f6f1e8"/>
+  <text x="40" y="66" fill="#17211c" font-family="Arial, sans-serif" font-size="26" font-weight="700">Meera Iyer</text>
+  <text x="40" y="100" fill="#64706a" font-family="Arial, sans-serif" font-size="18">Ramoji and public events</text>
+  <text x="40" y="432" fill="#075944" font-family="Arial, sans-serif" font-size="20" font-weight="700">ID Verified · Public destination days</text>
+</svg>

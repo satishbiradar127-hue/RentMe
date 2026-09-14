@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Arjun Reddy verified Hyderabad travel companion">
+  <rect width="640" height="480" fill="#edf2f6"/>
+  <circle cx="492" cy="108" r="90" fill="#0b7a5b" opacity="0.24"/>
+  <path d="M88 360c76-70 138-99 186-86 55 14 83 72 144 61 42-8 84-46 148-122v147H88Z" fill="#d69d2f" opacity="0.28"/>
+  <circle cx="318" cy="160" r="68" fill="#2f2b25"/>
+  <path d="M224 382c14-91 55-137 96-137s82 46 96 137Z" fill="#173c5d"/>
+  <circle cx="320" cy="176" r="48" fill="#b77955"/>
+  <rect x="250" y="128" width="138" height="42" rx="21" fill="#1f211f"/>
+  <circle cx="448" cy="280" r="34" fill="#17211c"/>
+  <rect x="394" y="258" width="98" height="56" rx="12" fill="#17211c"/>
+  <circle cx="448" cy="280" r="18" fill="#64706a"/>
+  <text x="40" y="66" fill="#17211c" font-family="Arial, sans-serif" font-size="26" font-weight="700">Arjun Reddy</text>
+  <text x="40" y="100" fill="#64706a" font-family="Arial, sans-serif" font-size="18">Golconda photo routes</text>
+  <text x="40" y="432" fill="#075944" font-family="Arial, sans-serif" font-size="20" font-weight="700">ID Verified · Public photography walks</text>
+</svg>

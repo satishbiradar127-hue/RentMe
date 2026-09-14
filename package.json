@@ -1,0 +1,34 @@
+{
+  "name": "rentme-v1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RentMe V1 marketplace foundation",
+  "scripts": {
+    "build": "tsc && node -e \"fs.copyFileSync('backend/db/schema.sql', 'dist/db/schema.sql')\"",
+    "check-types": "tsc --noEmit",
+    "dev": "node scripts/dev.js",
+    "health": "node scripts/health-check.js",
+    "ready": "node scripts/readiness-check.js",
+    "verify-db": "node scripts/verify-db.js",
+    "prod:check": "node scripts/readiness-check.js && node scripts/health-check.js",
+    "seed": "node -e \"require('./dist/db/seed.js').runSeed()\"",
+    "start": "node server.js",
+    "start:prod": "node -e \"process.env.NODE_ENV='production'; require('./server.js')\"",
+    "test": "node scripts/test-runner.js",
+    "test:legacy": "node tests/smoke.test.js && node tests/api.test.js && node tests/server_smoke.js && node tests/browser_smoke.test.js && node tests/postgres.test.js && node tests/auth.test.js"
+  },
+  "keywords": [
+    "rentals",
+    "marketplace",
+    "local"
+  ],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "@types/pg": "^8.23.1",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "pg": "^8.23.0"
+  }
+}
