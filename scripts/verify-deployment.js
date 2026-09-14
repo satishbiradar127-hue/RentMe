@@ -4,7 +4,7 @@ const { loadEnv, maskDatabaseUrl } = require("./env.js");
 
 loadEnv();
 
-const PUBLIC_URL = process.env.PUBLIC_URL || "https://rentme-marketplace.loca.lt";
+const PUBLIC_URL = process.env.PUBLIC_URL || "https://rentme-marketplace.onrender.com";
 const LOCAL_PORT = Number(process.env.PORT || 5173);
 
 async function request(urlStr, options = {}) {
@@ -146,9 +146,15 @@ async function runDeploymentVerification() {
 
     // 8. Notifications Endpoint
     console.log("[Verification 8/8] Notifications API...");
-    const notifRes = await request(`${PUBLIC_URL}/api/notifications`);
+    const notifRes = await request(`${PUBLIC_URL}/api/notifications`, {
+      headers: { "X-Actor-Id": "user-aisha", "X-Actor-Role": "companion" }
+    });
     const notifOk = notifRes.status === 200 && notifRes.body?.success === true;
     record("Notifications In-App Endpoint", notifOk, `HTTP ${notifRes.status}`);
+
+    const unauthNotifRes = await request(`${PUBLIC_URL}/api/notifications`);
+    const unauthNotifOk = unauthNotifRes.status === 401;
+    record("Notifications Guard: Unidentified Actor Rejected", unauthNotifOk, `HTTP ${unauthNotifRes.status}`);
 
   } catch (err) {
     console.error("Verification encountered unexpected error:", err.message);
