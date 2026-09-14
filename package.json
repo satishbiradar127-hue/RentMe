@@ -4,7 +4,7 @@
   "private": true,
   "description": "RentMe V1 marketplace foundation",
   "scripts": {
-    "build": "tsc && node -e \"fs.copyFileSync('backend/db/schema.sql', 'dist/db/schema.sql')\"",
+    "build": "tsc && node -e \"require('node:fs').copyFileSync('backend/db/schema.sql', 'dist/db/schema.sql')\"",
     "check-types": "tsc --noEmit",
     "dev": "node scripts/dev.js",
     "health": "node scripts/health-check.js",
@@ -24,12 +24,10 @@
     "local"
   ],
   "license": "UNLICENSED",
-  "devDependencies": {
+  "dependencies": {
     "@types/node": "^22.20.2",
     "@types/pg": "^8.23.1",
+    "pg": "^8.23.0",
     "typescript": "^7.0.2"
-  },
-  "dependencies": {
-    "pg": "^8.23.0"
   }
 }
