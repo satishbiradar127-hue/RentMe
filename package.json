@@ -11,6 +11,7 @@
     "ready": "node scripts/readiness-check.js",
     "verify-db": "node scripts/verify-db.js",
     "prod:check": "node scripts/readiness-check.js && node scripts/health-check.js",
+    "verify:deploy": "node scripts/verify-deployment.js",
     "seed": "node -e \"require('./dist/db/seed.js').runSeed()\"",
     "start": "node server.js",
     "start:prod": "node -e \"process.env.NODE_ENV='production'; require('./server.js')\"",
