@@ -4,19 +4,23 @@ const { loadEnv, maskDatabaseUrl } = require("./env.js");
 
 loadEnv();
 
-const PUBLIC_URL = process.env.PUBLIC_URL || "https://40c190d187279c.lhr.life";
+const PUBLIC_URL = process.env.PUBLIC_URL || "https://rentme-marketplace.loca.lt";
 const LOCAL_PORT = Number(process.env.PORT || 5173);
 
 async function request(urlStr, options = {}) {
   return new Promise((resolve, reject) => {
     const url = new URL(urlStr);
     const client = url.protocol === "https:" ? https : http;
+    const reqHeaders = {
+      "bypass-tunnel-reminder": "1",
+      ...(options.headers || {})
+    };
     const req = client.request(
       url,
       {
         method: options.method || "GET",
-        headers: options.headers || {},
-        timeout: options.timeout || 10000
+        headers: reqHeaders,
+        timeout: options.timeout || 15000
       },
       (res) => {
         let body = "";
